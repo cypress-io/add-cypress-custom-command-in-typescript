@@ -1,0 +1,16 @@
+{
+  "name": "add-cypress-custom-command-in-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^1.4.1",
+    "typescript": "^2.6.2"
+  }
+}
