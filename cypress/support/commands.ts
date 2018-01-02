@@ -3,22 +3,25 @@
  *
  * @returns {string} "foo"
  * @example
- *    cy.foo() // yields "foo"
+ *    foo() // "foo"
  */
 function foo() {
   return 'foo'
 }
+
+// add command "cy.foo()"
 Cypress.Commands.add('foo', foo)
 
+// add new command to the existing Cypress interface
 declare namespace Cypress {
   interface Chainable {
     /**
-     * Returns "foo"
+     * Yields "foo"
      *
      * @returns {typeof foo}
      * @memberof Chainable
      * @example
-     *    cy.foo() // "foo"
+     *    cy.foo().then(f =. ...) // f is "foo"
      */
     foo(): typeof foo
   }

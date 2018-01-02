@@ -3,5 +3,5 @@ it('works', () => {
 })
 
 it('has new command foo', () => {
-  expect(cy.foo()).to.equal('foo')
+  cy.foo().should('equal', 'foo')
 })
