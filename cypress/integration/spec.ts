@@ -5,3 +5,7 @@ it('works', () => {
 it('has new command foo', () => {
   cy.foo().should('equal', 'foo')
 })
+
+it('has new command foo2 that uses foo', () => {
+  cy.foo2().should('equal', 'foo')
+})
