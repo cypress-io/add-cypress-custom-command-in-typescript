@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "lint": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@bahmutov/add-typescript-to-cypress": "^1.1.1",
+    "@types/node": "^8.5.5",
     "cypress": "^1.4.1",
     "typescript": "^2.6.2"
   }
