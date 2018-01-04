@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cypress-io/add-cypress-custom-command-in-typescript.svg?branch=master)](https://travis-ci.org/cypress-io/add-cypress-custom-command-in-typescript)
+
 * install typescript compiler v2.6.2
 * install Cypress v1.4.1
 * open Cypress once to scaffold tests

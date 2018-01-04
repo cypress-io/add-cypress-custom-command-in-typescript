@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "lint": "tsc --noEmit"
   },
   "keywords": [],
