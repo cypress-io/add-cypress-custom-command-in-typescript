@@ -17,3 +17,6 @@ export function foo() {
 export function foo2() {
   return cy.foo()
 }
+
+const name = 'actions'
+console.log('name in actions is', name)

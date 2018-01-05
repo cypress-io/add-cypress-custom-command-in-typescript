@@ -2,11 +2,19 @@
 // https://github.com/cypress-io/add-cypress-custom-command-in-typescript/issues/2
 // import {foo, foo2} from './actions'
 // but requiring in CommonJS style works
-const { foo, foo2 } = require('./actions')
+;(() => {
+  const { foo, foo2 } = require('./actions')
+  const _ = Cypress._
 
-// add commands to Cypress like "cy.foo()" and "cy.foo2()"
-Cypress.Commands.add('foo', foo)
-Cypress.Commands.add('foo2', foo2)
+  // add commands to Cypress like "cy.foo()" and "cy.foo2()"
+  Cypress.Commands.add('foo', foo)
+  Cypress.Commands.add('foo2', foo2)
+
+  // unrelated constant - does it conflict with a constant with same name
+  // in your tests?
+  const name = 'Cypress-command'
+  console.log('name in commands is', name)
+})()
 
 // add new command to the existing Cypress interface
 declare namespace Cypress {
@@ -19,7 +27,7 @@ declare namespace Cypress {
      * @example
      *    cy.foo().then(f = ...) // f is "foo"
      */
-    foo(): typeof foo
-    foo2(): typeof foo2
+    foo: () => string
+    foo2: () => string
   }
 }
