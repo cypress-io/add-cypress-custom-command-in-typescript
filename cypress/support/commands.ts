@@ -3,7 +3,8 @@
 // import {foo, foo2} from './actions'
 // but requiring in CommonJS style works
 ;(() => {
-  const { foo, foo2 } = require('./actions')
+  // import { foo, foo2 } from './actions';
+  const {foo, foo2} = require('./actions')
   const _ = Cypress._
 
   // add commands to Cypress like "cy.foo()" and "cy.foo2()"
@@ -12,8 +13,8 @@
 
   // unrelated constant - does it conflict with a constant with same name
   // in your tests?
-  const name = 'Cypress-command'
-  console.log('name in commands is', name)
+  const label = 'Cypress-command'
+  console.log('name in commands is', label)
 })()
 
 // add new command to the existing Cypress interface

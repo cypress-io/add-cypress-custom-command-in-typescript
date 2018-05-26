@@ -2,5 +2,11 @@
   "include": [
     "node_modules/cypress",
     "cypress/*/*.ts"
-  ]
+  ],
+  "compilerOptions": {
+    "types": ["cypress", "node"],
+    "lib": [
+      "es2015"
+    ]
+  }
 }

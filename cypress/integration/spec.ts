@@ -1,8 +1,8 @@
 ;(() => {
   // try to have name constant in test as in commands.ts
   const _ = Cypress._
-  const name = 'Cypress-command'
-  console.log('name in commands is', name)
+  const label = 'Cypress-command'
+  console.log('name in commands is', label)
 
   it('works', () => {
     expect(Cypress.version).to.be.a('string')
