@@ -6,7 +6,8 @@
   "compilerOptions": {
     "types": ["cypress", "node"],
     "lib": [
-      "es2015"
+      "es2015",
+      "dom"
     ]
   }
 }

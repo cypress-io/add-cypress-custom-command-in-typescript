@@ -1,4 +1,4 @@
 {
   "ignoreTestFiles": "*.js",
-  "videoRecording": false
+  "video": false
 }
