@@ -28,9 +28,10 @@ export function foo() {
 }
 
 /**
- * Uses cy.foo() internally
+ * Uses another custom command `cy.foo()` internally.
  *
- * @returns
+ * @returns {string} "foo"
+ * @example cy.foo() // "foo"
  */
 export function foo2() {
   return cy.foo()
