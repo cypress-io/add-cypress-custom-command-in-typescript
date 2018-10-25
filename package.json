@@ -1,7 +1,7 @@
 {
   "name": "add-cypress-custom-command-in-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing how new Cypress commands are added in TypeScript",
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
@@ -9,13 +9,18 @@
     "cypress:run": "cypress run",
     "lint": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cypress",
+    "cypress-io",
+    "typescript",
+    "example"
+  ],
+  "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "@bahmutov/add-typescript-to-cypress": "^1.1.1",
-    "@types/node": "^8.5.5",
-    "cypress": "^1.4.1",
-    "typescript": "^2.6.2"
+    "@bahmutov/add-typescript-to-cypress": "2.0.0",
+    "@types/node": "8.10.36",
+    "cypress": "3.1.0",
+    "typescript": "3.1.3"
   }
 }
