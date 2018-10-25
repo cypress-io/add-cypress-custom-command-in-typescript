@@ -4,7 +4,7 @@ To add TypeScript support to Cypress
 
 * `npm i -D @bahmutov/add-typescript-to-cypress`
 * start using TypeScript in your [cypress/integration/spec.ts](cypress/integration/spec.ts)
-* you can write [custom Cypress commands](https://on.cypress.io/custom-commands) in TypeScript, see example in [cypress/support/plugins.ts](cypress/support/plugins.ts) to add custom commands.
+* you can write [custom Cypress commands](https://on.cypress.io/custom-commands) in TypeScript, see example in [cypress/support/commands.ts](cypress/support/commands.ts) to add custom commands.
 
 ## Screenshots
 
