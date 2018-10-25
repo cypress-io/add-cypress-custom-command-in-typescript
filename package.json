@@ -9,7 +9,12 @@
     "cypress:run": "cypress run",
     "lint": "tsc --noEmit"
   },
-  "keywords": ["cypress", "cypress-io", "typescript", "example"],
+  "keywords": [
+    "cypress",
+    "cypress-io",
+    "typescript",
+    "example"
+  ],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
