@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/cypress-io/add-cypress-custom-command-in-typescript.svg?branch=master)](https://travis-ci.org/cypress-io/add-cypress-custom-command-in-typescript)
+[![Build Status](https://travis-ci.org/cypress-io/add-cypress-custom-command-in-typescript.svg?branch=master)](https://travis-ci.org/cypress-io/add-cypress-custom-command-in-typescript) [![renovate-app badge][renovate-badge]][renovate-app]
 
 To add TypeScript support to Cypress
 
@@ -24,3 +24,6 @@ If you hit a problem, please open an issue either in this repo or in [cypress-io
 
 - [bahmutov/add-typescript-to-cypress](https://github.com/bahmutov/add-typescript-to-cypress)
 - [Cypress Tooling: TypeScript](https://on.cypress.io/typescript-support)
+
+[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
+[renovate-app]: https://renovateapp.com/
