@@ -12,6 +12,7 @@ declare global {
        */
       foo: typeof foo
       foo2: typeof foo2
+      sum: (a: number, b: number) => Chainable<number>
     }
   }
 }
@@ -37,6 +38,15 @@ export function foo2() {
   return cy.foo()
 }
 
+/**
+ * Adds two numbers
+ * @example sum(2, 3) // 5
+*/
+export function sum(a: number, b: number): number {
+  return a + b
+}
+
 // add commands to Cypress like "cy.foo()" and "cy.foo2()"
 Cypress.Commands.add('foo', foo)
 Cypress.Commands.add('foo2', foo2)
+Cypress.Commands.add('sum', sum)
