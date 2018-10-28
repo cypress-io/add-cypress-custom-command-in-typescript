@@ -1,6 +1,11 @@
 // add new command to the existing Cypress interface
 declare global {
   namespace Cypress {
+    type Greeting = {
+      greeting: string,
+      name: string
+    }
+
     interface Chainable {
       /**
        * Yields "foo"
@@ -12,7 +17,30 @@ declare global {
        */
       foo: typeof foo
       foo2: typeof foo2
+
+      /**
+       * Yields sum of the arguments.
+       *
+       * @memberof Cypress.Chainable
+       *
+       * @example
+        ```
+        cy.sum(2, 3).should('equal', 5)
+        ```
+       */
       sum: (a: number, b: number) => Chainable<number>
+
+      /**
+       * Example command that passes an object of arguments.
+       * @memberof Cypress.Chainable
+       * @example
+       ```
+        cy.greeting({ greeting: 'Hello', name: 'Friend' })
+        // or use defaults
+        cy.greeting()
+       ```
+       */
+      greeting: (options?: Greeting) => void
     }
   }
 }
@@ -46,7 +74,22 @@ export function sum(a: number, b: number): number {
   return a + b
 }
 
+const defaultGreeting: Cypress.Greeting = {
+  greeting: 'hi',
+  name: 'there'
+}
+
+/**
+ * Prints a custom greeting.
+ * @example printToConsole({ greeting: 'hello', name: 'world' })
+ */
+export const printToConsole = (options = defaultGreeting) => {
+  const {greeting, name} = options
+  console.log(`${greeting}, ${name}`)
+}
+
 // add commands to Cypress like "cy.foo()" and "cy.foo2()"
 Cypress.Commands.add('foo', foo)
 Cypress.Commands.add('foo2', foo2)
 Cypress.Commands.add('sum', sum)
+Cypress.Commands.add('greeting', printToConsole)
