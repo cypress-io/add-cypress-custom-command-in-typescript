@@ -1,7 +1,7 @@
 {
   "include": [
     "node_modules/cypress",
-    "cypress/*/*.ts"
+    "cypress/**/*.ts"
   ],
   "compilerOptions": {
     "types": ["cypress", "node"],
