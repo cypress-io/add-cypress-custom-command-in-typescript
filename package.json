@@ -20,7 +20,7 @@
   "devDependencies": {
     "@bahmutov/add-typescript-to-cypress": "2.0.0",
     "@types/node": "8.10.36",
-    "cypress": "3.1.0",
+    "cypress": "3.3.1",
     "typescript": "3.1.3"
   }
 }
