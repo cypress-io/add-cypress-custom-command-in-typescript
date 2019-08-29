@@ -21,6 +21,6 @@
     "@bahmutov/add-typescript-to-cypress": "2.0.0",
     "@types/node": "8.10.52",
     "cypress": "3.4.1",
-    "typescript": "3.5.3"
+    "typescript": "3.6.2"
   }
 }
