@@ -19,7 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "@bahmutov/add-typescript-to-cypress": "2.0.0",
-    "@types/node": "8.10.52",
+    "@types/node": "8.10.53",
     "cypress": "3.4.1",
     "typescript": "3.6.2"
   }
