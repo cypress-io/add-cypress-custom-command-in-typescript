@@ -18,7 +18,7 @@
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "@bahmutov/add-typescript-to-cypress": "2.0.0",
+    "@bahmutov/add-typescript-to-cypress": "2.1.2",
     "@types/node": "8.10.53",
     "cypress": "3.4.1",
     "typescript": "3.6.2"
