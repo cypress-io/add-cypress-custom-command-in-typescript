@@ -20,5 +20,6 @@
   ],
   "lockFileMaintenance": {
     "enabled": true
-  }
+  },
+  "masterIssue": true
 }
